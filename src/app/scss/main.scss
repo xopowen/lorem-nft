@@ -1,0 +1,109 @@
+
+@tailwind utilities;
+
+@layer utilities{
+
+  .animation-default{
+    animation-duration:.3s ;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+  }
+
+  .appearanceY{
+    animation-name:appearanceY;
+    @extend .animation-default
+  }
+  .appearanceX{
+    animation-name: appearanceX;
+    @extend .animation-default;
+  }
+  .rotate180{
+    animation-name:rotate180;
+    @extend .animation-default;
+  }
+  .rotate180-reverse{
+    animation-name:rotate180-reverse;
+    @extend .animation-default
+  }
+  .scaleCenterAppearance{
+    @extend .animation-default;
+    animation-name:scaleCenterAppearance ;
+    animation-timing-function: ease-in-out;
+  }
+
+  .outlineAppearance7-5{
+    @extend .animation-default;
+    animation-name:outlineAppearance7-5 ;
+  }
+  .option-appearance{
+    animation-name: optionAppearance ;
+    @extend .animation-default;
+
+  }
+}
+
+
+@keyframes optionAppearance  {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes rotate180-reverse {
+  0% {
+    transform: rotate(179deg);
+
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes outlineAppearance7-5 {
+  from{
+    outline-width:0;
+  }
+  to{
+    outline-width:7.5px ;
+  }
+
+}
+
+@keyframes rotate180 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(179deg);
+  }
+}
+@keyframes appearanceY {
+   0% {
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+@keyframes appearanceX{
+  0% {
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scaleCenterAppearance {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}

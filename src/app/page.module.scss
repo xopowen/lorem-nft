@@ -1,0 +1,135 @@
+@import "scss/header";
+@import "scss/butger-menu";
+
+
+.btn{
+
+ @apply flex items-center justify-center gap-2.5 rounded-[20px] py-7  transition;
+ &:focus{
+
+ }
+ &:hover{
+  transform: scale(1.05);
+ }
+ &:active{
+  transform: scale(1.1);
+ }
+ &_purpur{
+  background: var(--call-to-action,#a259ff);
+ }
+
+}
+
+.start-section {
+ @apply grid md:grid-cols-2 xl:px-28 md:px-[72px] px-8 py-10 md:py-20 mx-auto;
+ @apply md:gap-x-7 md:gap-5 xl:gap-9 gap-10;
+
+ &__btn{
+  @apply w-full h-[60px] md:w-56 font-semibold text-base leading-6 text-center font-second;
+
+  color: var(--text);
+ }
+}
+
+.main-text {
+ @apply font-semibold flex flex-col xl:gap-5 gap-2  md:gap-4;
+ &__head{
+
+  text-transform: capitalize;
+  position: relative;
+  top: -3px;
+  left: 2px;
+  @apply font-semibold;
+  @apply font-second text-2xl leading-[1.6]  tracking-[2.8px];
+  @apply  md:text-4xl md:leading-[1.29]  md:tracking-[0.8px];
+  @apply xl:text-[61px]    xl:tracking-[3.4px] xl:leading-[1.2];
+
+ }
+ &__main{
+  @apply font-second font-normal text-base  leading-[1.3] xl:text-2xl tracking-[1.2px] xl:leading-[2.1rem];
+ }
+}
+
+.product-container{
+ @apply md:col-start-2 md:row-span-2 ;
+}
+.product {
+ @apply rounded-[20px] overflow-hidden;
+
+ // .product__img
+ &__img {
+  height: 100%;
+  object-fit: scale-down;
+  width: 100%;
+
+ }
+
+ // .product__body
+ &__body {
+  @apply p-5 font-second flex flex-col gap-2.5;
+  color: var(--text);
+  background: var(--background---secondary);
+ }
+ &__head{
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.4;
+  text-transform: capitalize;
+ }
+ // .product__author
+ &__author {
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+
+ }
+}
+
+.author {
+ a{
+  @apply flex items-center gap-3 w-min;
+ }
+
+ &__logo{
+  @apply size-6 rounded-full;
+ }
+}
+.indicators-container{
+ @apply flex flex-col xl:gap-[30px] gap-6;
+
+
+}
+.indicators {
+ @apply flex  justify-between  gap-[30px];
+ // .indicators__item
+ &__item {
+  display: flex;
+  flex-direction: column;
+ @apply gap-2.5 xl:gap-4;
+ }
+
+ // .indicators__count
+ &__count {
+  @apply font-main h-[22px] text-[22px]  leading-[1.6];
+  @apply xl:text-[28px] xl:h-[22px] xl:leading-[1.4];
+
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--text);
+ }
+
+ // .indicators__name
+ &__name {
+  @apply xl:text-2xl text-base;
+  font-weight: 400;
+
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: var(--text);
+  white-space: nowrap;
+ }
+}
+
+

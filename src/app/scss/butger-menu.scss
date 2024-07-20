@@ -1,0 +1,24 @@
+.burger-menu {
+  // .burger-menu__icon
+  &__icon {
+    @apply  xl:hidden transition hover:scale-110 active:scale-125 focus:outline outline-1 outline-amber-50;
+  }
+
+  &__switcher:checked ~ &__icon-container &__icon{
+    @apply rotate-180;
+  }
+  // .burger-menu__switcher
+  &__switcher {
+    @apply w-0 h-0 absolute -top-1 left-0;
+  }
+
+  &__switcher:checked ~ &__menu{
+    @apply flex max-xl:flex-col max-xl:absolute max-xl:right-4 max-xl:option-appearance max-xl:p-2 max-xl:border-2 max-xl:border-amber-50;
+    background: var(--background);
+    z-index: 10;
+  }
+  // .burger-menu__menu
+  &__menu {
+    @apply hidden xl:flex ;
+  }
+}
