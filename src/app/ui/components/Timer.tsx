@@ -2,44 +2,53 @@
 import {useEffect, useState} from "react";
 
 function Timer() {
-    let [time,setTime] = useState<number>(0  )
-    console.log(time)
+    let [time,setTime] = useState<number>(0 )
+
     useEffect(()=>{
-        console.log('interval start')
 
-        let interval= setInterval(  ()=>{
+        let interval=    setInterval(  ()=>{
 
-            setTime(time+1)
+            setTime((t)=>t+1)
 
         },1000)
-        return
+
+        return ()=>clearInterval(interval)
     },[])
 
     return (
-        <div className='p-7 bg-[rgba(59, 59, 59, 0.5)] blur-md rounded-[20px] text-[var(--text)]'>
+        <div className='p-[30px] grid gap-2 bg-taimer blur-md rounded-[20px] text-[var(--text)]'>
             <p
-            className='font-main font-normal text-sm'
+            className='font-main font-normal text-[12px]'
             >Auction ends in:</p>
-            <div className='flex gap-2.5'>
-                <div>
+            <div className='flex   gap-4'>
+                <div className='grid gap-2'>
                     <p className='font-bold font-main text-4xl'>
-                        {time}
+                        {Number(59 -time/60/60).toFixed(0)}
                     </p>
-                    <p className='font-main font-normal text-sm '>Hours</p>
+                    <p className='font-main font-normal text-sm w-0'>Hours</p>
                 </div>
-                <span className='font-bold font-main text-4xl'>:</span>
-                <div>
-                    <p className='font-bold font-main text-4xl'>
-                        {new Date(new Date().setMinutes(59) - time).getMinutes()}
+                <span className='font-bold font-main text-[28px]'>:</span>
+                <div className='grid gap-2'>
+                    <p className='font-bold font-main text-4xl  '>
+                        {
+                            new Date(new Date().setMinutes(59-time/60)   ).getMinutes() >9 ?
+                            new Date(new Date().setMinutes(59-time/60)   ).getMinutes():
+                            '0'+new Date(new Date().setMinutes(59-time/60)   ).getMinutes()
+                        }
                     </p>
-                    <p className='font-main font-normal text-sm '>Minutes</p>
+                    <p className='font-main font-normal text-sm w-0 '>Minutes</p>
                 </div>
-                <span className='font-bold font-main text-4xl'>:</span>
-                <div>
+                <span className='font-bold font-main text-[28px]'>:</span>
+                <div className='grid gap-2'>
                     <p className='font-bold font-main text-4xl'>
-                        {new Date(+new Date().setSeconds(59) - time).getSeconds()}
+                        {
+                            new Date(+new Date().setSeconds(59- time) ).getSeconds() > 9?
+                            new Date(+new Date().setSeconds(59- time) ).getSeconds():
+                                "0"+ new Date(+new Date().setSeconds(59- time) ).getSeconds()
+
+                        }
                     </p>
-                    <p className='font-main font-normal text-sm '>Seconds</p>
+                    <p className='font-main font-normal text-sm w-0'>Seconds</p>
                 </div>
 
             </div>

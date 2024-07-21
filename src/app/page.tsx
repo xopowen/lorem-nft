@@ -4,6 +4,7 @@ import TopCreators from "@/app/ui/sections/TopCreators";
 import BrowseCategories from "@/app/ui/sections/BrowseCategories";
 import DiscoverMoreNFTs from "@/app/ui/sections/DiscoverMoreNFTs";
 import MagicMashrooms from "@/app/ui/sections/Mashrooms";
+import HowItWork from "@/app/ui/sections/HowItWork";
 
 
 export default function Home( ) {
@@ -15,6 +16,7 @@ export default function Home( ) {
         <BrowseCategories/>
         <DiscoverMoreNFTs/>
         <MagicMashrooms/>
+        <HowItWork/>
     </main>
   )
 }

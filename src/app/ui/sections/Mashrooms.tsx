@@ -8,9 +8,10 @@ function MagicMashrooms() {
         grid gap-10 py-10 lg:py-20
         px-[30px] md:px-18 lg:px-28
         relative
-        bg-[linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);]
+        bg-gradient-mashroom
         '>
-            <div className='grid grid-cols-1 md:grid-cols-2 justify-between gap-7'>
+            <div className='grid grid-cols-1 md:grid-cols-2 justify-center md:justify-between
+            gap-[30px]'>
                 <div className='grid gap-7'>
                     <div className='bg-[var(--background---secondary)] w-min rounded-[20px]
                     overflow-hidden
@@ -19,16 +20,16 @@ function MagicMashrooms() {
                         <Author addClass={''}/>
                     </div>
 
-                    <h2 className='font-semibold font-second text-4xl text-[var(--text)]'>
+                    <h2 className='font-semibold font-second text-4xl lg:text-[51px] text-[var(--text)]'>
                         Magic Mashrooms
                     </h2>
                 </div>
-                <div className='md:col-start-2 md:row-span-2 flex items-end justify-end'>
+                <div className='md:col-start-2 md:row-span-2 flex items-end md:justify-end'>
                     <Timer/>
                 </div>
                 <div className='flex relative'>
                     <a href='#' type={'button'}  className='
-                    btn md:px-12 py-5 font-semibold font-second text-base
+                    btn w-full md:w-auto md:px-12 py-5 font-semibold font-second text-base
                     bg-white
                     text-[var(--background)]
 

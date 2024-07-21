@@ -14,10 +14,15 @@ const config: Config = {
         main: 'var( --font-family)',
         second:'var(--second-family)',
       },
+      backgroundColor:{
+        "taimer":'rgba(59, 59, 59, 0.5)',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-mashroom":
+            "linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%)"
       },
       gap:{
         "clamp-30-80":"clamp(30px,4.1vw,80px)"

@@ -31,7 +31,7 @@ const Author = ()=>{
                 />
             </div>
         </div>
-        <div>
+        <div className='grid gap-0.5'>
             <p className='
                         font-second font-semibold
                         text-2xl text-[var(--text)]
@@ -53,29 +53,33 @@ const Author = ()=>{
 
 function TopCreators() {
     // @ts-ignore
-    const list = Array.apply(null, {length: 6})
+    const list = Array.apply(null, {length: 12})
     return (
         <section className='
-        grid gap-10 py-10 lg:py-20
+        grid gap-10 lg:gap-[60px] py-10 lg:py-20
         px-[30px] md:px-18 lg:px-28
         relative
         '>
-            <div className='grid gap-2.5 font-second font-semibold'>
-                <h2 className=' text-[28px] lg:text-4xl'>
+            <div className='grid gap-2.5 lg:gap-6 font-second font-semibold'>
+                <h2 className=' text-[28px] lg:text-[38px]'>
                     Top creators
                 </h2>
-                <p className='text-base'>
+                <p className='text-base lg:text-[22px]'>
                     Checkout Top Rated Creators on the NFT Marketplace
                 </p>
             </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-7'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-[30px] '>
                 {  list.map((el,index) =>{
                     return <Author key={index}/>
                 })}
             </div>
-            <a href='#' type={'button'}  className='btn border-2 border-solid border-[var(--call-to-action)]
-               md:absolute md:top-12 md:right-[72px] lg:top-24 lg:right-28
-               md:px-12 py-5 font-semibold font-second text-base
+            <a href='#' type={'button'}  className='
+           btn
+
+                rounded-[20px]
+               border-2 border-solid border-[var(--call-to-action)]
+               md:absolute md:top-12 md:right-[72px] lg:top-28 lg:right-28
+               md:px-12  py-4 font-semibold font-second text-base
                ' aria-label="">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.17053 12.4494C6.28055 12.7766 6.10451 13.131 5.77734 13.241C4.71792 13.5973 4.15489 14.4866 3.85373 15.391C3.73414 15.7501 3.66189 16.0958 3.61848 16.3817C3.90434 16.3383 4.25006 16.266 4.60917 16.1464C5.51355 15.8453 6.4029 15.2823 6.75916 14.2228C6.86918 13.8957 7.2236 13.7196 7.55078 13.8296C7.87795 13.9397 8.05399 14.2941 7.94396 14.6213C7.4096 16.2103 6.08801 16.9715 5.00411 17.3324C4.45655 17.5148 3.94395 17.6048 3.5698 17.6497C3.38182 17.6722 3.22641 17.6836 3.116 17.6894C3.06074 17.6924 3.01658 17.6939 2.98505 17.6946C2.96928 17.695 2.95666 17.6952 2.94737 17.6954L2.93596 17.6955L2.93217 17.6955L2.93077 17.6955L2.93019 17.6955C2.92993 17.6955 2.92969 17.6955 2.92969 17.0705C2.30469 17.0705 2.30469 17.0702 2.30469 17.07L2.30469 17.0694L2.30469 17.068L2.30471 17.0642L2.30481 17.0528C2.30493 17.0435 2.30514 17.0309 2.30553 17.0151C2.30631 16.9836 2.30782 16.9394 2.31072 16.8842C2.31653 16.7738 2.32797 16.6184 2.35052 16.4304C2.3954 16.0562 2.48542 15.5436 2.66776 14.9961C3.0287 13.9122 3.78989 12.5906 5.37891 12.0562C5.70608 11.9462 6.0605 12.1222 6.17053 12.4494ZM2.92969 17.0705H2.30469C2.30469 17.4157 2.58451 17.6955 2.92969 17.6955V17.0705Z" fill="white" />
