@@ -5,6 +5,7 @@ import BrowseCategories from "@/app/ui/sections/BrowseCategories";
 import DiscoverMoreNFTs from "@/app/ui/sections/DiscoverMoreNFTs";
 import MagicMashrooms from "@/app/ui/sections/Mashrooms";
 import HowItWork from "@/app/ui/sections/HowItWork";
+import JoinOur from "@/app/ui/sections/JoinOur";
 
 
 export default function Home( ) {
@@ -17,6 +18,7 @@ export default function Home( ) {
         <DiscoverMoreNFTs/>
         <MagicMashrooms/>
         <HowItWork/>
+        <JoinOur/>
     </main>
   )
 }

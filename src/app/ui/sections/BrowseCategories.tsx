@@ -15,6 +15,7 @@ const CardCategory = ()=>{
     </article>
 }
 function BrowseCategories() {
+    // @ts-ignore
     const list = Array.apply(null, {length: 8})
     return (
         <section className='
