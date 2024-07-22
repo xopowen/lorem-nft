@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output:'export',
-    assetPrefix:'/lorem-nft/out'
+    assetPrefix:'https://xopowen.github.io/lorem-nft/out/'
 };
 module.exports = nextConfig
