@@ -17,7 +17,8 @@ function StartSection() {
 
             <div className='product-container'>
                 <article className='product'>
-                    <Image src={''} width={510} height = '401' className="product__img"  alt={''}/>
+                    <Image src={''} width={510} height = {401}
+                           className="product__img    "  alt={''}/>
                     <div className='product__body'>
                         <h2 className='product__head'>Space Walking</h2>
                         <Author addClass={'product__author'}/>

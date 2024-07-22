@@ -19,7 +19,7 @@ const TrendingItem = ({className}:{className:string}) => {
                        width={95}
                        height={ 95}
                        loading={'lazy'}
-                       className='object-center w-full md:h-[100px] md:w-[100px]'>
+                       className='object-center   md:h-[100px] md:w-[100px]'>
 
                 </Image>
             </div>
@@ -28,7 +28,7 @@ const TrendingItem = ({className}:{className:string}) => {
                        width={95}
                        height={ 95}
                        loading={'lazy'}
-                       className='object-center w-full md:h-[100px] md:w-[100px]'>
+                       className='object-center  md:h-[100px] md:w-[100px]'>
 
                 </Image>
             </div>
