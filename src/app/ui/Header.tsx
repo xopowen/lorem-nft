@@ -5,7 +5,9 @@ function Header() {
     return (
         <header className={'header'}>
             <div className='header__left-container '>
-                <Image  className='header__logo' width="32" height="32" alt={''} src={Storefront}/>
+                <Image  className='header__logo' width="32" height="32"
+
+                        alt={''} src={Storefront}/>
                 <svg width="200" height="21" viewBox="0 0 200 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.48 14.5476H7.876V0.599609H10.78V15.9996H5.104L3.3 2.05161H2.904V15.9996H0V0.599609H5.676L7.48 14.5476Z" fill="white" />
                     <path d="M14.0647 0.599609H23.9207V3.37161H16.9687V6.89161H23.7887V9.66361H16.9687V15.9996H14.0647V0.599609Z" fill="white" />
