@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build ",
+    "build": "next build",
     "build_min_img": "next-export-optimize-images",
     "build_export": "cross-env-shell MODE_BUILD=export npm run build ; npm run build_min_img",
     "build_export_not_img_opt": "cross-env-shell MODE_BUILD=export npm run build",

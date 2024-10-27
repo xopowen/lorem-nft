@@ -8,15 +8,15 @@ import Footer from "@/app/ui/Footer";
 const spaseMomo = Space_Mono({
   style:['italic'],
   weight: ['400','700'],
+  subsets:['latin'],
   display:'swap',
-  preload: false,
   variable:'--font-family'
 })
 const workSans =Work_Sans({
   weight:['100','200','300','400','500','600','700','800','900'],
   display:'swap',
-  style:'italic',
-  preload:false,
+  subsets:['latin'],
+  style: ['italic'],
   variable:'--second-family'
 })
 
