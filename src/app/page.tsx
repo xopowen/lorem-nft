@@ -10,8 +10,7 @@ import JoinOur from "@/app/ui/sections/JoinOur";
 
 export default function Home( ) {
   return (
-    <main className='main'>
-        <StartSection/>
+    <>
         <TrendingCollection/>
         <TopCreators/>
         <BrowseCategories/>
@@ -19,6 +18,6 @@ export default function Home( ) {
         <MagicMashrooms/>
         <HowItWork/>
         <JoinOur/>
-    </main>
+    </>
   )
 }

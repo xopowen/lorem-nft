@@ -4,20 +4,23 @@ import Head from 'next/head'
 import './globals.scss'
 import Header from "@/app/ui/Header";
 import Footer from "@/app/ui/Footer";
+import StartSection from "@/app/ui/sections/StartSection";
 
 const spaseMomo = Space_Mono({
   style:['italic'],
   weight: ['400','700'],
   subsets:['latin'],
   display:'swap',
-  variable:'--font-family'
+  variable:'--font-family',
+  preload:true
 })
 const workSans =Work_Sans({
   weight:['100','200','300','400','500','600','700','800','900'],
   display:'swap',
   subsets:['latin'],
   style: ['italic'],
-  variable:'--second-family'
+  variable:'--second-family',
+  preload:true
 })
 
 
@@ -38,13 +41,14 @@ export default function RootLayout({
         <script async type="text/javascript" src='./y-metrika/script.js' />
       <link rel="preload" as="style" fetchPriority={'low'} media="all"
             href={' &family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'}/>
-
-
     </Head>
 
-      <body className={spaseMomo.variable+' '+workSans.variable} >
+      <body className={spaseMomo.variable+' '+workSans.variable}>
       <Header/>
+      <main className='main'>
+        <StartSection/>
       {children}
+      </main>
       <Footer/>
       </body>
 
