@@ -18,7 +18,7 @@ const HowItWorkCard = () => {
             md:min-w-[198px] md:min-h-[198px]
             lg:min-w-[250px] lg:min-h-[250px]
             '
-
+                    loading={'lazy'}
             ></Image>
 
         </div>

@@ -1,9 +1,24 @@
+import { Space_Mono,Work_Sans } from 'next/font/google'
 import type { Metadata } from 'next'
 import Head from 'next/head'
 import './globals.scss'
 import Header from "@/app/ui/Header";
 import Footer from "@/app/ui/Footer";
 
+const spaseMomo = Space_Mono({
+  style:['italic'],
+  weight: ['400','700'],
+  display:'swap',
+  preload: false,
+  variable:'--font-family'
+})
+const workSans =Work_Sans({
+  weight:['100','200','300','400','500','600','700','800','900'],
+  display:'swap',
+  style:'italic',
+  preload:false,
+  variable:'--second-family'
+})
 
 
 export const metadata: Metadata = {
@@ -16,13 +31,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // onLoad="this.rel='stylesheet'"
   return (
     <html lang="en">
     <Head>
         <script async type="text/javascript" src='./y-metrika/script.js' />
+      <link rel="preload" as="style" fetchPriority={'low'} media="all"
+            href={' &family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'}/>
+
+
     </Head>
 
-      <body  >
+      <body className={spaseMomo.variable+' '+workSans.variable} >
       <Header/>
       {children}
       <Footer/>
