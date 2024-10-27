@@ -7,6 +7,7 @@ function Header() {
             <div className='header__left-container '>
                 <Image  className='header__logo' width="32" height="32"
                         loading={'eager'}
+                        fetchPriority={'high'}
                         alt={''} src={Storefront}/>
                 <svg width="200" height="21" viewBox="0 0 200 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.48 14.5476H7.876V0.599609H10.78V15.9996H5.104L3.3 2.05161H2.904V15.9996H0V0.599609H5.676L7.48 14.5476Z" fill="white" />
