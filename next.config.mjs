@@ -17,7 +17,7 @@ if(process.env.MODE_BUILD === 'export'){
         } ,
         output:'export',
         //при установке assetPrefix для коректой работы next-export-optimize-images нужно также установить в export-images.config basePath
-        assetPrefix:'/it-subbort-group/out'
+        assetPrefix:'/lorem-nft/out'
 
     })
 }

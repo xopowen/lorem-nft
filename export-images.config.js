@@ -37,7 +37,7 @@ const config = {
             extension: extension,
         }
     },
-    basePath:'/it-subbort-group/out'
+    basePath:'/lorem-nft/out'
 }
 
 module.exports = config
