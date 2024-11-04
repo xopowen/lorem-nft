@@ -11,6 +11,7 @@ const NFTCard = ()=>{
                 bg-[var(--background---secondary)]
                 rounded-[20px]
                 overflow-hidden
+                p-4
                 '>
         <Image alt={''}
                src={NoPhone}

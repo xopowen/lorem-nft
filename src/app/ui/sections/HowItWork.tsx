@@ -6,7 +6,8 @@ const HowItWorkCard = () => {
   className='p-5 md:pt-2.5 md:pb-7  lg:p-7 lg:pt-2.5
   rounded-[20px]
   overflow-hidden
-  grid justify-center
+  flex flex-col justify-center
+  items-center
   gap-5
   bg-[var(--background---secondary)]
   '
@@ -14,9 +15,7 @@ const HowItWorkCard = () => {
         <div>
             <Image  src={NoPhone} alt='' width="170" height="169"
             className='
-            w-full min-w-[170px] min-h-[170px]
-            md:min-w-[198px] md:min-h-[198px]
-            lg:min-w-[250px] lg:min-h-[250px]
+                object-contain
             '
                     loading={'lazy'}
             ></Image>
@@ -46,7 +45,7 @@ function HowItWork() {
                     Find out how to get started
                 </p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3  gap-5 md:gap-[30px] '>
+            <div className='grid grid-cols-1 sm:grid-cols-3  md:grid-cols-3  gap-5 md:gap-[30px] '>
                 <HowItWorkCard/>
                 <HowItWorkCard/>
                 <HowItWorkCard/>

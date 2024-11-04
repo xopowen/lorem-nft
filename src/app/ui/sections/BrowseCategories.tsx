@@ -4,17 +4,23 @@ import NoPhone from "../../../../public/img/no-photos-svgrepo-com.svg";
 
 const CardCategory = ()=>{
     return <article className='rounded-[20px] border bg-[var(--background---secondary)]
-      grid  gap-2
-    overflow-hidden
+      flex
+      flex-col
+      gap-5
+      py-3
+      justify-center
+      relative
+      w-full
+     overflow-hidden
      font-second  font-normal text-base text-[var(--text)] lg:text-[22px] leading-snug '>
         <Image
             src={NoPhone}
             alt={''} loading={"lazy"} height={142} width={147}
-        className={'object-contain w-full md:min-w-[150px] lg:min-w-60 lg:h-60'}
+        className={'object-contain  px-2 m-auto '}
         />
-        <div className={'pt-5 pb-6 px-[30px]'}>
-            <h3 className=' font-second font-semibold text-base text-[var(--text)] lg:text-[22px] ' >Collectibles</h3>
-        </div>
+
+            <h3 className=' text-center font-second font-semibold text-base text-[var(--text)] lg:text-[22px] ' >Collectibles</h3>
+
     </article>
 }
 function BrowseCategories() {

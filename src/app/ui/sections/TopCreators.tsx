@@ -61,7 +61,7 @@ function TopCreators() {
         px-[30px] md:px-18 lg:px-28
         relative
         '>
-            <div className='grid gap-2.5 lg:gap-6 font-second font-semibold'>
+            <div className='grid md:max-w-[50%] gap-2.5 lg:gap-6 font-second font-semibold'>
                 <h2 className=' text-[28px] lg:text-[38px]'>
                     Top creators
                 </h2>

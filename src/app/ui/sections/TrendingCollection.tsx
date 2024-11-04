@@ -35,12 +35,15 @@ const TrendingItem = ({className}:{className:string}) => {
 
                 </Image>
             </div>
-            <div className='overflow-hidden rounded-[20px]  bg-[var(--call-to-action)]
+            <div className='overflow-hidden
+            rounded-[20px]
+            bg-[var(--call-to-action)]
                         transition
                         hover:active:scale-105
                         btn btn_purpur
-                        w-24 md:w-[100px]
-                        h-24 md:h-[100px]
+                        p-6
+                        items-center
+                        self-center
                         '>1025+</div>
 
         </div>
@@ -69,11 +72,11 @@ function TrendingCollection() {
             flex gap-[30px] justify-center
 
             '>
-                <TrendingItem className='grid gap-4'>
+                <TrendingItem className='grid gap-4  bg-[var(--background---secondary)]  rounded-[20px] p-4'>
                 </TrendingItem>
-                <TrendingItem className=' gap-4 hidden md:grid'>
+                <TrendingItem className=' gap-4 hidden md:grid bg-[var(--background---secondary)]  rounded-[20px] p-4'>
                 </TrendingItem>
-                <TrendingItem className='hidden lg:grid gap-4'>
+                <TrendingItem className='hidden lg:grid gap-4 bg-[var(--background---secondary)]  rounded-[20px] p-4'>
                 </TrendingItem>
             </div>
         </section>
